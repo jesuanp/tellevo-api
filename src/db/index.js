@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 const { Sequelize, DataTypes, Op } = require('sequelize');
 const modelUser = require('../models/User.js');
 const modelMotocarro = require('../models/Motocarro.js');
