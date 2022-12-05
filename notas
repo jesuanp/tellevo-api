@@ -1,0 +1,26 @@
+ ------- Rutas -------
+
+/api/user:
+ post('/') -> body -> {firstName, lastName, phoneNumber, cedula}
+ get('/')
+ get('/:id') -> params -> {id}
+
+
+/api/conductor:
+ post('/') -> body -> {firstName, lastName, phoneNumber, cedula, address, photo}
+ get('/')
+ get('/:id') -> params -> {id}
+
+
+/api/motocarro:
+ post('/') -> body -> {placa, fotosMotocarro, conductorId}
+ get('/')
+ get('/:id') -> params -> {id}
+
+
+/api/admin:
+ post('/') -> body -> {userName}
+ get('/')
+ get('/:id') -> params -> {id}
+
+
