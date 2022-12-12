@@ -1,7 +1,7 @@
  ------- Rutas -------
 
 /api/user:
- post('/') -> body -> {firstName, lastName, phoneNumber, cedula}
+ post('/') -> body -> {firstName, lastName, phoneNumber, documentNumber, documentType, dateExp, countryExp, cityExp}
  get('/')
  get('/:id') -> params -> {id}
 
