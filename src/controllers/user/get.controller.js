@@ -1,11 +1,13 @@
-const {User} = require('../../db/index.js');
+const {User, Document} = require('../../db/index.js');
 
 module.exports = {
     getAll: async (req, res) => {
 
         try{
     
-            const users =  await User.findAll();
+            const users =  await User.findAll({
+                include: [{model: Document}]
+            });
         
             res.status(200).json(users);
         }
@@ -21,7 +23,9 @@ module.exports = {
 
         try{
     
-            const response = await User.findByPk(id);
+            const response = await User.findByPk(id, {
+                include: [{model: Document}]
+            });
         
             res.status(200).json(response);
         }
