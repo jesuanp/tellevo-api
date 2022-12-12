@@ -15,5 +15,5 @@ dbConnect();
 
 app.listen(3001, () => {
     console.log('server on port 3001');
-    db.sync({alter: true});
+    db.sync({force: true});
 });
