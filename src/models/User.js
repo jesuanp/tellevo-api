@@ -14,11 +14,6 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             unique: true,
         },
-        cedula: {
-            type: DataTypes.TEXT,
-            allowNull: false,
-            unique: true
-        },
         active: {
             type: DataTypes.BOOLEAN,
             defaultValue: true
