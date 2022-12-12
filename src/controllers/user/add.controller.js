@@ -60,7 +60,7 @@ module.exports = async (req, res) => {
         user.documentId = document.id;
         await user.save();
     
-        res.status(200).send({user, document});
+        res.status(200).json({user, document});
     }
     catch(e){
         return res.status(404).json(e);
